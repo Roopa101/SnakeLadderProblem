@@ -13,6 +13,9 @@ namespace SnakeLadderProgram
             const int InitialPosition = 0;
             int SinglePlayerPosition = InitialPosition;
             Console.WriteLine("Single Player is starting with position" + SinglePlayerPosition);
+            Random random = new Random();
+            int DiceRoll = random.Next(1, 7);
+            Console.WriteLine("Player got the num :" + DiceRoll);
             Console.ReadLine();
         }
     }
