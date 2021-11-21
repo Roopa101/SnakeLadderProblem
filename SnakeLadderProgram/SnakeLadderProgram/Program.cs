@@ -20,7 +20,7 @@ namespace SnakeLadderProgram
             int DiceRoll = random.Next(1, 7);
             Console.WriteLine("Player got the num :" + DiceRoll);
             Random random1 = new Random();
-            int CheckForoptions = random.Next(0, 3);
+            int CheckForoptions = random1.Next(0, 3);
 
             switch (CheckForoptions)
             {
