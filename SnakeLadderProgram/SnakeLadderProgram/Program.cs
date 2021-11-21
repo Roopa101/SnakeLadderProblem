@@ -8,9 +8,11 @@ namespace SnakeLadderProgram
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Welcomde to Snake Ladder Problem");
+            const int InitialPosition = 0;
+            int SinglePlayerPosition = InitialPosition;
+            Console.WriteLine("Single Player is starting with position" + SinglePlayerPosition);
             Console.ReadLine();
         }
     }
