@@ -26,16 +26,16 @@ namespace SnakeLadderProgram
             {
                 case LadderPosition:
                     SinglePlayerPosition = SinglePlayerPosition + DiceRoll;
-                    Console.WriteLine("Player got a Ladder , player position is + " SinglePlayerPosition);
+                    Console.WriteLine("Player got a Ladder , player position is " +  SinglePlayerPosition);
                     break;
 
                 case SnakePosition:
                     SinglePlayerPosition = SinglePlayerPosition - DiceRoll;
-                    Console.WriteLine("Player got a Snake , player position is + " SinglePlayerPosition);
+                    Console.WriteLine("Player got a Snake , player position is  " + SinglePlayerPosition);
                     break;
 
                 default:
-                    Console.WriteLine(""Player got nothing ");
+                    Console.WriteLine(""Player got nothing " + SinglePlayerPosition);
                     break;
 
             }
