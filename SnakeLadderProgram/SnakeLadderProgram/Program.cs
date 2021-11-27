@@ -18,14 +18,15 @@ namespace SnakeLadderProgram
             int SinglePlayerPosition = InitialPosition;
 
             while (SinglePlayerPosition <= FinalPosition) 
+            {
             Random random = new Random();
             int DiceRoll = random.Next(1, 7);
             Console.WriteLine("Player got the num :" + DiceRoll);
             Random random1 = new Random();
             int CheckForoptions = random1.Next(0, 3);
-
-            switch (CheckForoptions)
-            {
+            
+             switch (CheckForoptions)
+             {
                 case LadderPosition:
                     SinglePlayerPosition = SinglePlayerPosition + DiceRoll;
                     Console.WriteLine("Player got a Ladder , player position is  " + SinglePlayerPosition);
@@ -40,8 +41,8 @@ namespace SnakeLadderProgram
                     Console.WriteLine("Player got nothing " + SinglePlayerPosition);
                     break;
 
+              }
             }
-            
             Console.ReadLine();
         }
     }
